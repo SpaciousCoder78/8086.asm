@@ -1,0 +1,9 @@
+start:
+  MOV AX,2000  ;move segment address 2000 to ax
+  MOV DS,AX    ;move ax to ds
+  MOV SI,0500  ;SET SOURCE INDEX
+  MOV DI,0600  ;SET DESTINATION INDEX
+  MOV AL,0003  ;SET 3 TO AL
+  MOV BL,0004  ;SET 4 TO BL
+  MUL BL       ;MULTIPLY AL AND BL AND STORE IN AX
+  
